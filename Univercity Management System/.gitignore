@@ -1,0 +1,19 @@
+﻿# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# .NET build output
+[Bb]in/
+[Oo]bj/
+TestResults/
+
+# Logs and temporary files
+*.log
+
+# Environment secrets
+.env
+.env.*
+!.env.example

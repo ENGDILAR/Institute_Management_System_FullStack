@@ -1,0 +1,48 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: ums-sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: ${MSSQL_SA_PASSWORD}
+      MSSQL_PID: "Developer"
+    ports:
+      - "14330:1433"
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+    networks:
+      - ums-network
+
+  api:
+    build:
+      context: ./Univercity Management System
+      dockerfile: Dockerfile
+    container_name: institute-api
+    depends_on:
+      - sqlserver
+    environment:
+      ConnectionStrings__CS: "Server=ums-sqlserver,1433;Database=${DB_NAME};User Id=sa;Password=${MSSQL_SA_PASSWORD};TrustServerCertificate=True"
+    ports:
+      - "8080:8080"
+    networks:
+      - ums-network
+
+  ui:
+    build:
+      context: ./UMSui
+      dockerfile: Dockerfile
+    container_name: ums-ui
+    depends_on:
+      - api
+    ports:
+      - "8081:80"
+    networks:
+      - ums-network
+
+networks:
+  ums-network:
+    driver: bridge
+
+volumes:
+  sqlserver-data:
+    name: ums_sqlserver-data
