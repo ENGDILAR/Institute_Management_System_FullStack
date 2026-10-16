@@ -38,17 +38,11 @@ const adminMenu = [
     icon: ClipboardList,
     path: "/admin/subjects",
   },
-  {
-    title: "Academic Calendar",
-    icon: CalendarDays,
-    path: "/admin/calendar",
-  },
 ];
 
 export default function AdminDashboardSidebar({ open, onClose, onLogout }) {
   return (
     <>
-      {/* Mobile Overlay */}
       {open && (
         <div
           className="fixed inset-0 z-40 bg-black/40 lg:hidden"
@@ -152,7 +146,6 @@ export default function AdminDashboardSidebar({ open, onClose, onLogout }) {
           </NavLink>
         </nav>
 
-        {/* Logout */}
         <div className="border-t border-sidebar-border p-3">
           <button
             type="button"

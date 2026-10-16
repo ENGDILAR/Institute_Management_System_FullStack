@@ -28,7 +28,6 @@ export default function DashboardHeader({ title, onMenuClick }) {
         </div>
       </div>
 
-      {/* Right */}
       <div className="flex items-center gap-2">
         <button
           type="button"
@@ -37,16 +36,6 @@ export default function DashboardHeader({ title, onMenuClick }) {
           aria-label="Toggle theme"
         >
           {isDark ? <Sun size={18} /> : <Moon size={18} />}
-        </button>
-
-        <button
-          type="button"
-          className="relative flex h-9 w-9 items-center justify-center border border-border text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-          aria-label="Notifications"
-        >
-          <Bell size={18} />
-
-          <span className="absolute right-1.5 top-1.5 h-1.5 w-1.5 rounded-full bg-primary" />
         </button>
 
         <div className="ml-2 hidden h-9 w-px bg-border sm:block" />
