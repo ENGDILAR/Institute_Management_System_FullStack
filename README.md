@@ -8,23 +8,19 @@ This project was built to demonstrate practical full-stack development using a m
 
 ---
 
-## 📸 Preview
+## Accouts to Test
 
 > Add screenshots of the running application here.
 
-| Admin Dashboard                        | Course Offerings                        |
-| -------------------------------------- | --------------------------------------- |
-| `docs/screenshots/admin-dashboard.png` | `docs/screenshots/course-offerings.png` |
+| Admin Account            | Instructor Account      |
+| ------------------------ | ----------------------- |
+| Email: `admin@gmail.com` | Email:`inst@gmail.com ` |
+| Password: `Admin123456`  | Password:`Inst123456`   |
 
-| Student Dashboard                        | Student Marks                        |
-| ---------------------------------------- | ------------------------------------ |
-| `docs/screenshots/student-dashboard.png` | `docs/screenshots/student-marks.png` |
-
-Example:
-
-```md
-![Admin Dashboard](docs/screenshots/admin-dashboard.png)
-```
+| Student Account  
+| ----------------------------------------
+| Email: `std@gmail.com` |
+| Password: `Std123456` |
 
 ---
 
