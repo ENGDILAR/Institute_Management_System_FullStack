@@ -15,7 +15,7 @@ This project was built to demonstrate practical full-stack development using a m
 | Admin Account            | Instructor Account      |
 | ------------------------ | ----------------------- |
 | Email: `admin@gmail.com` | Email:`inst@gmail.com ` |
-| Password: `Admin123456`  | Password:`Inst123456`   |
+| Password: `Admin123456`  | Password:`Teach123456`  |
 
 | Student Account  
 | ----------------------------------------
